@@ -245,6 +245,9 @@ RCT_EXPORT_METHOD(play
     self._key = key;
     AVAudioPlayer *player = [self playerForKey:key];
     if (player) {
+        [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+            [[UIApplication sharedApplication]endBackgroundTask:UIBackgroundTaskInvalid];
+        }];//后台任务
         [[self callbackPool] setObject:[callback copy] forKey:key];
         [player play];
         [self setOnPlay:YES forPlayerKey:key];
