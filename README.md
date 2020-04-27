@@ -1,5 +1,5 @@
 # react-native-sound
-
+  fork from zmxv/react-native-sound。修改了ios后台播放任务
 [![](https://img.shields.io/npm/v/react-native-sound.svg?style=flat-square)][npm]
 [![](https://img.shields.io/npm/l/react-native-sound.svg?style=flat-square)][npm]
 [![](https://img.shields.io/npm/dm/react-native-sound.svg?style=flat-square)][npm]
